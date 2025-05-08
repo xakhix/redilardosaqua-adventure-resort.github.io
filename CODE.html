@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RAAR Resort</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: "#8ab86e", secondary: "#f8f9fa" },
+          borderRadius: {
+            none: "0px",
+            sm: "4px",
+            DEFAULT: "8px",
+            md: "12px",
+            lg: "16px",
+            xl: "20px",
+            "2xl": "24px",
+            "3xl": "32px",
+            full: "9999px",
+            button: "8px",
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    body, html {
+      height: 1000%;
+      margin: 0px;
+      padding: 0px;
+      color: white;
+    }
+
+    .navbar {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  width: 96%;
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 5px;
+  z-index: 2;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-list li {
+  position: relative;
+}
+
+.nav-list li a {
+  display: block;
+  padding: 14px 20px;
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-list li a:hover {
+  background-color: rgb(64, 66, 66);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent; 
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+  z-index: 3;
+}
+
+.dropdown-content a {
+  color: white; 
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+    .hero-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+  text-align: left;
+  padding: 0 20px; 
+  background: url(aqua\ resort.jpg) no-repeat center center/cover;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.hero-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.hero-text {
+  z-index: 1;
+  position: relative;
+  color: white;
+  max-width: 600px;
+  margin: 0; 
+  padding: 20px; 
+}
+
+.hero-text h1 {
+  font-family: "Times new roman", cursive;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 25px; 
+}
+
+.hero-text p {
+  font-size: 17px; 
+  font-family: 'Times New Roman', Times, serif; 
+  margin-top: 5px; 
+}
+
+    .intro-container {
+  background-color: #bfdbf5d2;
+  padding: 50px 20px;
+  max-width: 1500px;
+  text-align: center;
+ 
+}
+
+.intro-logo {
+  display: block;
+  margin: 6px auto 20px auto;
+  height: 90px;
+  width: 85px;
+  opacity: 0.6;
+  margin-top: -1%;
+}
+
+.version {
+  color: #333;
+  font-weight: 800;
+  font-family: "Dancing Script", cursive;
+  margin: 16px 6px;
+  margin-top: 10px;
+}
+
+.mision {
+  color: #444;
+  font-family: "Vollkorn", serif;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+
+.card-section {
+      background-color: #a9bbf4d8;
+      color: #333;
+      padding: 4rem 2rem;
+      
+    }
+    
+    .navbar-brand img {
+      height: 50px;
+      
+    }
+
+    .card-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #2a74e3;
+    }
+    
+    .visit-section {
+  background-color: #ffffff; 
+  padding: 60px 0;
+}
+
+.visit-container {
+  background-color: #bddbf3dd; 
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.visit-btn {
+      background-color: #7a4a27;
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 25px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      transition: 0.3s ease;
+    }
+    .visit-btn:hover {
+      background-color: #5c361d;
+    }
+    .visit-text h2 {
+      font-family: 'Georgia', serif;
+      font-weight: bold;
+    }
+    .visit-text p {
+      color: #6c6c6c;
+    }
+    .img-grid img {
+      width: 50%;
+      height: 50%;
+      border-radius: 10px;
+    }
+.intrr{
+  color: black;
+  font-family: "Russo One", sans-serif;
+  justify-content: center;
+  text-align: center;
+  margin: 25px 70px;
+  margin-top: 40px;
+  font-size: 40px;
+
+}
+
+    .activities{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+     
+        }
+        .cntnr{
+            position: relative;
+            margin-bottom: 100px;
+            width: 99vw;
+            height: 100vh;
+            margin: -3px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .slider{
+            position: absolute;
+            inset: 80px 200px 80px 80px;
+            
+        }
+        .slider .slides {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 200px;
+            height: 300px;
+            background: var(background-image);
+            background-size: cover;
+            background-position: center;
+            transition:0.5s;
+            border-radius: 20px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.494);
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+        .slider .slides:nth-child(1),
+        .slider .slides:nth-child(2) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: translateY(0);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.427);
+    
+            background-size: cover;
+        }
+        .slider .slides:nth-child(3) {
+            left: calc(50% + 240px);
+            background-size: cover;
+        }
+        .slider .slides:nth-child(4) {
+            left: calc(50% + 500px);
+            background-size: cover;
+        }
+        .slider .slides:nth-child(5) {
+            left: calc(50% + 760px);
+            background-size: cover;
+        }
+        .slider .slides:nth-child(6) {
+            left: calc(50% + 1020px);
+            background-size: cover;
+        }
+        .buttons{
+            position: absolute;
+            bottom: 15px;
+            display: flex;
+            gap: 20px;
+        }
+        .buttons span{
+            position: relative;
+            width: 50px;
+            height: 50px;
+            background: rgb(75, 74, 74);
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+        .buttons span::before{
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border-top: 4px solid white;
+            border-left: 4px solid white;
+            transform: rotate(315deg) translate(2px,2px);
+        }
+        .buttons span:nth-child(2)::before{
+            transform: rotate(135deg) translate(2px,2px);
+        }
+        .buttons span:active{
+            opacity: 0.5;
+        }
+        .content{
+            position: relative;
+            padding: 40px;
+            max-width: 600px;
+            transition: 0.25s;
+            transition-delay: 0s;
+            transform: translateY(40px);
+            z-index: 1000;
+            opacity: 0;
+        }
+        .content h2{
+            font-size: 4em;
+            color: #1c1f1da1;
+        }
+        .content p{
+          font-size: 25px;
+            color: rgba(26, 27, 26, 0.662);
+            font-weight: 800px;
+        }
+        .slider .slides:nth-child(1) .content,
+        .slider .slides:nth-child(2) .content{
+            opacity: 1;
+            transform: translateY(0px);
+            transition-delay: 0.5s;
+        }
+        @media (max-width: 900px)
+        {
+            .slider {
+                position: absolute;
+                inset: 40px 40px 200px 40px;
+            }
+            .slider .slides
+            {
+                width: 100px;
+                height: 100px;
+                
+                top:initial;
+                bottom: -170px;
+                box-shadow:  0 10px 20px grey;
+            }
+            .slider .slides:nth-child(1),
+            .slider .slides:nth-child(2)
+            {
+                top:initial;
+                bottom:0px
+            }
+            .slider .slides:nth-child(3)
+            {
+                left: 0;
+            }
+            .slider .slides:nth-child(4)
+            {
+                left: 120px;
+            }
+            .slider .slides:nth-child(5)
+            {
+                left: 240px;
+            }
+            .slider .slides:nth-child(6)
+            {
+                left: 360px;
+            }
+        }
+  
+        :where([class^="ri-"])::before {
+        content: "\f3c2";
+      }
+      body {
+        font-family: "Vollkorn", serif;
+        color: #333;
+      }
+      .book-now-btn {
+        background-color: #8ab86e;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+      .book-now-btn:hover {
+        background-color: #7aa55f;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(138, 184, 110, 0.2);
+      }
+      .book-now-btn:active {
+        transform: translateY(0);
+      }
+      .section-fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.6s ease-out;
+      }
+      .section-fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .amenity-card {
+        transition: all 0.3s ease;
+      }
+      .amenity-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+      }
+      .amenity-card i {
+        transition: all 0.3s ease;
+      }
+      .amenity-card:hover i {
+        transform: scale(1.1);
+        color: #8ab86e;
+      }
+      .offer-card {
+        transition: all 0.3s ease;
+      }
+      .offer-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+      }
+      .offer-card img {
+        transition: all 0.6s ease;
+      }
+      .offer-card:hover img {
+        transform: scale(1.05);
+      }
+      .social-link {
+        transition: all 0.3s ease;
+      }
+      .social-link:hover {
+        background-color: #8ab86e;
+        transform: translateY(-2px);
+      }
+      .newsletter-input {
+        transition: all 0.3s ease;
+      }
+      .newsletter-input:focus {
+        background-color: #2d3748;
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(138, 184, 110, 0.3);
+      }
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fade-in-up {
+        animation: fadeInUp 0.6s ease-out forwards;
+      }
+      .terms-box{
+            width: 1500px;
+            background-color: rgba(119, 136, 153, 0.097);
+            color: rgba(240, 248, 255, 0.129);
+            font-family: sans-serif;
+            padding: 60px 30px;
+        }
+        .terms-text{
+            padding: 0 20px;
+            height: 290px;
+            overflow-y: auto;
+            font-size: 15px;
+            font-weight: 500;
+            color: black;
+            margin-bottom: 50px;
+            font-family: "Vollkorn", serif;
+
+        }
+        .terms-text::-webkit-scrollbar{
+            width: 2px;
+            background-color: black;
+        }
+        .terms-text::-webkit-scrollbar-thumb{
+            background-color: red;
+        }
+        .terms-text h2{
+            text-transform: uppercase;
+        }
+        .terms-box h4{
+            font-size: 13px;
+            text-align: center;
+            padding: 0 40px;
+            margin-top: 80px;
+        }
+        .terms-box span{
+            color: red;
+        }
+        footer{
+            background-color: rgba(128, 128, 128, 0.848);
+        }
+        .footerContainer{
+            width: 100%;
+            height: 300px;
+            padding: 70px 30px 20px;
+        }
+        .socialIcons{
+            display: flex;
+            justify-content: center;
+            color: aquamarine;
+            
+        }
+        .socialIcons a{
+            text-decoration: none;
+            padding: 10px;
+            background-color: rgb(255, 255, 255);
+            margin-top: 10px;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+        
+        
+        }
+        .socialIcons a i{
+            font-size: 2em;
+            color: rgb(133, 115, 115);
+            opacity: 0.9;
+        
+        }
+        .soacialIcons a:hover{
+            background-color: black;
+            transition: 0.5s;
+        }
+        .soacialIcons a:hover i{
+            color: rgb(181, 163, 163);
+            transition: 0.5s;
+        }
+        .footerNav{
+            margin: 30px 0;
+            
+        }
+        .footerNav ul{
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            
+        }
+        .footerNav ul li a{
+            color: white;
+            margin: 20px;
+            text-decoration: none;
+            font-size: 1.3em;
+            opacity: 0.7;
+            transition: 0.5s;
+        }
+        .footerNav ul li a:hover{
+            opacity: 1;
+        }
+        .footerBottom{
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+        }
+        .footerBottom p{
+            color: white;
+        }
+        .designer{
+            opacity: 0.7;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 400;
+            margin: 0px 5px;
+        }
+       
+        @media(max-width: 700px){
+            .footerNav ul{
+                flex-direction: column;
+            }
+            .footerNav ul li{
+                width: 100%;
+                text-align: center;
+                margin: 10px;
+
+            }
+        }
+
+
+  </style>
+</head>
+<body>
+  
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Home</a>
+        <div class="dropdown-content">
+          <a href="#accommodation">Accommodation</a>
+          <a href="#special-offer">Special Offer</a>
+          <a href="#activities">Activities</a>
+        </div>
+      </li>
+  
+      <li class="dropdown">
+        <a href="#" class="dropbtn">About</a>
+        <div class="dropdown-content">
+          <a href="#amenities">Amenities and Services</a>
+          <a href="#terms & conditions">Terms and Conditions</a>
+        </div>
+      </li>
+  
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Contact</a>
+        <div class="dropdown-content">
+          <a href="#booknow">Book Now!</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  
+
+    
+
+    <section class="hero-section text-white">
+      <div class="overlay"></div>
+      <div class="hero-text">
+        <div class="hero-heading">
+          <h1>REDILLARDOS AQUA <br>ADVENTURE RESORT</h1>
+        </div>
+        <div class="hero-subtext">
+          <p><em>Where nature meets adventure</em></p>
+        </div>
+      </div>
+    </section>
+    
+    
+    <div class="intro-container text-center">
+      <img class="intro-logo" src="logoresort.png">
+      <h3 class="version">NATURE meets ADVENTURE</h3>
+      <p class="mision">Every stay becomes an unforgettable escape.<br>
+        Surrounded by lush landscapes and thrilling outdoor experiences,<br> it's where relaxation meets adrenaline.<br>
+        Discover the perfect blend of comfort and excitement, <br>all in one breathtaking destination.</p>
+    </div>
+    
+
+<section class="card-section text-center">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <div class="card-icon"><i class="fas fa-swimmer"></i></div>
+            <h5 class="card-title">Activities</h5>
+            <p class="card-text">Redillardo's Aqua Adventure Resort offers more than 10 activities you can do.</p>
+            <a href="#" class="btn btn-outline-primary">More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <div class="card-icon"><i class="fas fa-calendar-alt"></i></div>
+            <h5 class="card-title">Events</h5>
+            <p class="card-text">Redillardo’s can accommodate a lot of guests — many people choose it as their venue.</p>
+            <a href="#" class="btn btn-outline-primary">More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <div class="card-icon"><i class="fas fa-hotel"></i></div>
+            <h5 class="card-title">Accommodations</h5>
+            <p class="card-text">Redillardo’s has beautiful villas and stays for your comfort.</p>
+            <a href="#" class="btn btn-outline-primary">More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="visit-section">
+  <div class="container visit-container">
+    <div class="row align-items-center">
+      
+      <div class="col-md-6 visit-text">
+        <h2>Visit Us Today</h2>
+        <p> A peaceful dock where calm waters meet endless adventure. 🚣‍♂️<br>
+          Paddle, pedal, or simply unwind under the red-roof cabanas — nature’s calling.<br>
+          This is lakeside serenity with a splash of thrill, all in one perfect escape.</p>
+        <p>Experience the serene magic of Redillardo's at night — where the lights dance on the water,<br>
+           the breeze whispers through the palms, <br>and adventure never sleeps. Camp under the stars,<br>
+            explore moonlit waters, and make memories that last a lifetime.</p>
+        <button class="visit-btn mt-3">VISIT US TODAY</button>
+      </div>
+      
+      <div class="col-md-6 img-grid d-flex gap-3">
+        <img src="image1.jpg" alt="floating cabin">
+        <img src="image2.jpg" alt="night">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div id="activities">
+  <div class="intrr"> Activities</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <div class="cntnr">
+    <div class="slider">
+        <div class="slides" style="background-image: url(ws.activities.img1.jpg);">
+            <div class="content">
+                
+            </div>
+        </div>
+        <div class="slides" style="background-image: url(ws.activities.img2.jpg);">
+            <div class="content">
+               
+            </div>
+        </div>
+        <div class="slides" style="background-image: url(ws.activities.img3.jpg);">
+            <div class="content">
+               
+            </div>
+        </div>
+        <div class="slides" style="background-image: url(ws.activities.img4jpg.jpg);">
+            <div class="content">
+                
+            </div>
+        </div>
+        <div class="slides" style="background-image: url(ws.activities.img5.jpg);">
+            <div class="content">
+               
+            </div>
+        </div>
+        <div class="slides" style="background-image: url(ws.activities.img6.jpg);">
+            <div class="content">
+                
+            </div>
+          </div>
+    </div>
+    <div class="buttons">
+        <span class="prev"></span>
+        <span class="next"></span>
+    </div>
+</div>
+<script>
+    let next = document.querySelector('.next');
+    let prev = document.querySelector('.prev');
+    let slider = document.querySelector('.slider');
+
+    next.addEventListener('click', function(){
+        let slides = document.querySelectorAll('.slides');
+        slider.appendChild(slides[0]);
+    })
+    prev.addEventListener('click', function(){
+        let slides = document.querySelectorAll('.slides');
+        slider.prepend(slides[slides.length - 1]);
+
+    })
+
+    
+      </script>
+      </div>
+  </div>
+</div>
+
+   
+  <div id="accommodation">
+    <main class="container mx-auto px-6 py-12 mt-32">
+    <h1 class="text-4xl font-bold text-center mb-16">Accommodation</h1>
+    
+    <section class="flex flex-col md:flex-row items-center gap-10 mb-24">
+      <div class="w-full md:w-1/2 h-96 rounded-lg overflow-hidden">
+        <img
+          src="ws.accommodation.img1.jpg"
+          alt="Luxury Suite"
+          class="w-full h-full object-cover object-top"
+        />
+      </div>
+      <div class="w-full md:w-1/2">
+        <h2 class="text-3xl font-semibold mb-4">The Cribs</h2>
+        <p class="text-gray-700 mb-6">
+          Experience the tranquility of waterfront living in these charming cabins.
+           Relax and unwind surrounded by nature's beauty!
+        </p>
+        <button
+          class="book-now-btn text-white px-6 py-3 !rounded-button whitespace-nowrap font-medium"
+        >
+          Book Now
+        </button>
+      </div>
+    </section>
+    
+    <section
+      class="flex flex-col md:flex-row-reverse items-center gap-10 mb-24"
+    >
+      <div class="w-full md:w-1/2 h-96 rounded-lg overflow-hidden">
+        <img
+          src="ws.accommodation.img2.jpg"
+          alt="Deluxe Room"
+          class="w-full h-full object-cover object-top"
+        />
+      </div>
+      <div class="w-full md:w-1/2">
+        <h2 class="text-3xl font-semibold mb-4">Sunrise Villa</h2>
+        <p class="text-gray-700 mb-6">
+          Discover the serene beauty of this picturesque lakeside getaway, framed by lush greenery and vibrant hues. 
+          The majestic mountain in the background adds a perfect touch to this peaceful escape.
+        </p>
+        <button
+          class="book-now-btn text-white px-6 py-3 !rounded-button whitespace-nowrap font-medium"
+        >
+          Book Now
+        </button>
+      </div>
+    </section>
+
+    <section class="flex flex-col md:flex-row items-center gap-10">
+      <div class="w-full md:w-1/2 h-96 rounded-lg overflow-hidden">
+        <img
+          src="Ws.accommodation.img3.jpg"
+          alt="Executive Suite"
+          class="w-full h-full object-cover object-top"
+        />
+      </div>
+      <div class="w-full md:w-1/2">
+        <h2 class="text-3xl font-semibold mb-4">Sunset Villa</h2>
+        <p class="text-gray-700 mb-6">
+          Book NowChilling under the shade, with the shimmering pool calling my name. 
+          Who's ready for a splash in this serene getaway?
+        </p>
+        <button
+          class="book-now-btn text-white px-6 py-3 !rounded-button whitespace-nowrap font-medium"
+        >
+        Book Now
+        </button>
+      </div>
+    </section>
+  </main>
+</div>
+    
+<div id="amenities">
+  <section class="bg-gray-50 py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">
+        Amenities & Services
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div
+          class="bg-white p-8 rounded-lg shadow-sm amenity-card section-fade-in"
+        >
+          <div class="w-12 h-12 flex items-center justify-center mb-4">
+            <i class="ri-wifi-line ri-2x text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">WiFi</h3>
+          <p class="text-gray-600">
+            Stay connected throughout the resort with high-speed
+             internet access in all rooms and public areas .
+          </p>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-sm">
+          <div class="w-12 h-12 flex items-center justify-center mb-4">
+            <i class="ri-adventure-line ri-2x text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Adventure Activities</h3>
+          <p class="text-gray-600">
+            Access to infinity pools, ATV riding, tilapia fishing, pedal boats.
+          </p>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-sm">
+          <div class="w-12 h-12 flex items-center justify-center mb-4">
+            <i class="ri-hotel-bed-line ri-2x text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Premium Bedding</h3>
+          <p class="text-gray-600">
+            Experience ultimate comfort with our luxury mattresses, high
+            thread-count linens, and selection of premium pillows.
+          </p>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-sm">
+          <div class="w-12 h-12 flex items-center justify-center mb-4">
+            <i class="ri-24-hours-line ri-2x text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Getting around Redilardo's</h3>
+          <p class="text-gray-600">
+            Can roam around to redilardo's cabana walk, panoramic view of Mt. Arayat,
+             picturesque view of sunrise and sunset.
+          </p>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-sm">
+          <div class="w-12 h-12 flex items-center justify-center mb-4">
+            <i class="ri-swimmer-line ri-2x text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Swimming Pool</h3>
+          <p class="text-gray-600">
+            Relax and unwind at our temperature-controlled indoor and outdoor
+            swimming pools with stunning views.
+          </p>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-sm">
+          <div class="w-12 h-12 flex items-center justify-center mb-4">
+            <i class="ri-house-line ri-2x text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Villas</h3>
+          <p class="text-gray-600">
+            Private units with full kitchens, living areas, fully air-conditioned and outdoor patios, 
+            perfect for families or groups seeking privacy.
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+    
+    
+    <div id="special-offer">
+      <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl font-bold text-center mb-12">Special Offers</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              class="bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm offer-card section-fade-in"
+            >
+              <div class="h-56 overflow-hidden">
+                <img
+                  src="Ws.special_offer.img1.jpg"
+                  alt="Romantic Package"
+                  class="w-full h-full object-cover object-top"
+                />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">Floating Cottage</h3>
+                <p class="text-gray-600 mb-4">
+                  "Set sail into tranquility with a boat ride that’s all about relaxation. 
+                  Let the gentle waves and cool breeze take you to your perfect escape."
+                </p>
+                
+                <button
+                  class="book-now-btn text-white px-5 py-2 !rounded-button whitespace-nowrap font-medium"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+            <div
+              class="bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm offer-card section-fade-in"
+            >
+              <div class="h-56 overflow-hidden">
+                <img
+                  src="ws.special_offer.img2.jpg"
+                  alt="Family Package"
+                  class="w-full h-full object-cover object-top"
+                />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">Camping</h3>
+                <p class="text-gray-600 mb-4">
+                  Wake up to the sounds of nature and the scent of fresh pine. 
+                  Camping is where memories are made and worries fade away.
+                </p>
+              
+                <button
+                  class="book-now-btn text-white px-5 py-2 !rounded-button whitespace-nowrap font-medium"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+            <div
+              class="bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm offer-card section-fade-in"
+            >
+              <div class="h-56 overflow-hidden">
+                <img
+                  src="ws.special_offer.img3.jpg"
+                  alt="Business Package"
+                  class="w-full h-full object-cover object-top"
+                />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">ATV</h3>
+                <p class="text-gray-600 mb-4">
+                  Feel the rush as the engine roars to life—every turn brings a new thrill.
+                   Motor activities are where speed meets adventure and freedom takes the wheel.
+                </p>
+              
+                <button
+                  class="book-now-btn text-white px-5 py-2 !rounded-button whitespace-nowrap font-medium"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+          </div>
+        </div>
+      </footer>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const observerOptions = {
+            root: null,
+            rootMargin: "0px",
+            threshold: 0.2,
+          };
+  
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+              }
+            });
+          }, observerOptions);
+  
+          document.querySelectorAll(".section-fade-in").forEach((element) => {
+            observer.observe(element);
+          });
+        });
+      </script>
+      
+    </div>
+   
+
+<div id="terms & conditions">
+  <div class="terms-box">
+    <div class="terms-text">
+        <h2>Terms of Conditions</h2>
+        <p>Welcome to our resort website. By accessing or using this website, you agree to be bound by the following Terms of Service.</p>
+        <p>Please read them carefully before using our services.</p> 
+        </p>
+        <p>
+        ✅For exceeding pax additional P250/head<br>
+        ✅Kids 3ft. and below (free)<br>
+        ✅For BOOKING AND RESERVATION kindly send at least a 40% RESERVATION FEE.<br>
+        ✅Deposit is not refundable.<br>
+        ‼️No Cancellation of Booking, but Rebooking is allowed.<br>
+        ✅Reschedule 2 weeks prior to your reserved date<br>
+        ✅ We require 2,000 security deposit upon checking-in.
+          (Refundable upon check-out)<br>
+           📍Google Maps: Redilardo's Aquafarm <br>
+           Sta.Catalina San Luis,Pampanga<br>
+            For more information and inquiries, please leave us a message. 💌<br>
+            We look forward to seeing you soon and providing you with an unforgettable farm resort experience! 🎣
+        </p>
+    <h4> I Agree to the <span>Terms of services</span>and i read the Privacy Notice.</h4>
+    
+</div>
+
+</div>
+
+<div id="booknow">
+  <footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-gmmail"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Email</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    </footer>
+</div>
+  </body>
+</html>
